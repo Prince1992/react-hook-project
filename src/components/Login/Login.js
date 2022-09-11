@@ -49,9 +49,9 @@ const Login = (props) => {
       console.log('Checking From Validity');
       setFormIsValid(emailIsValid && passwordIsValid);
     }, 500);
-
     return () => {
       console.log('Cleanup');
+
       clearTimeout(identfier);
     };
   }, [emailIsValid, passwordIsValid]);
